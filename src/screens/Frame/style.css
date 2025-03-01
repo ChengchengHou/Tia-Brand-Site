@@ -6,6 +6,7 @@
   height: 100%;
   padding: 23px 129px;
   position: relative;
+  max-width: 100vw;
 }
 
 .frame .div-2 {
@@ -30,16 +31,17 @@
   width: 100%;
 }
 
-.frame .section {
+.frame .hero {
   background: linear-gradient(
     180deg,
     rgb(241, 229, 216) 0%,
     rgb(254, 249, 244) 100%
   );
   background-color: var(--material-colors-terra-50);
-  height: 800px;
+  height: 100vh;
   position: relative;
   width: 100%;
+  will-change: transform;
 }
 
 .frame .div-3 {
@@ -47,10 +49,10 @@
   border: 0px none;
   display: flex;
   gap: var(--spacing-3);
-  left: 130px;
   position: relative;
+  padding: 0px 120px;
   top: 150px;
-  width: 1020px;
+  width: 100%;
 }
 
 .frame .div-4 {
@@ -182,7 +184,7 @@
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
   position: relative;
   width: 100%;
 }
@@ -258,6 +260,8 @@
   align-items: flex-start;
   align-self: stretch;
   background-color: #ffffff;
+  border: 1px solid;
+  border-color: var(--material-colors-terra-200);
   border-radius: var(--paddings-border-radius);
   display: flex;
   flex: 1 1 50%;
@@ -297,7 +301,7 @@
   align-self: stretch;
   color: var(--palette-text-primary);
   font-family: var(--typography-h5-font-family);
-  font-size: var(--typography-h5-font-size);
+  font-size: var(--typography-h6-font-size);
   font-style: var(--typography-h5-font-style);
   font-weight: var(--typography-h5-font-weight);
   letter-spacing: var(--typography-h5-letter-spacing);
@@ -306,7 +310,7 @@
 }
 
 .frame .pagination-wrapper {
-  align-items: flex-start;
+  align-items: center;
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
@@ -320,7 +324,7 @@
   height: 22px !important;
   left: 9px !important;
   position: absolute !important;
-  top: 9px !important;
+  top: 8px !important;
   width: 22px !important;
 }
 
@@ -866,21 +870,24 @@
   width: 100%;
 }
 
-.frame .left-side {
+.frame .nav-bar {
   align-items: center;
   background-color: var(--palette-common-white-states-main);
   border-radius: var(--paddings-border-radius);
   box-shadow: 0.4rem 1.6rem 3.2rem rgba(29, 29, 29, 0.08);
   display: flex;
-  height: 64px;
-  justify-content: space-between;
-  padding: 0px var(--paddings-padding-24);
+  height: 72px;
+  justify-content: space-between; /* Center align the navbar content */
+  padding: 0 var(--paddings-padding-24);
 
-  position: sticky;
-  top: 0; /* This makes sure it sticks */
+  position: fixed;
+  top: 24px; /* Stick to the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
   z-index: 1000; /* Ensure it stays above other elements */
-
+  max-width: 1280px; /* Restrict max width */
   width: 100%;
+  box-sizing: border-box; /* Prevents padding from affecting width */
 }
 
 .frame .logo-wrapper {
@@ -926,4 +933,5 @@
 
 .marquee-wrapper {
   background-color: var(--material-colors-terra-100);
+  max-width: 100vw;
 }

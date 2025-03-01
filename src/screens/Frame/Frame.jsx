@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useRef } from "react";
 import { Button } from "../../components/Button";
 import { Chip } from "../../components/Chip";
 import { Pagination } from "../../components/Pagination";
@@ -11,6 +12,11 @@ import { Logo2 } from "../../icons/Logo2";
 import { Logo3 } from "../../icons/Logo3";
 import "./style.css";
 import MarqueeComponent from "../../components/Marquee/Marquee";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { TextPlugin } from "gsap/TextPlugin";
+
+gsap.registerPlugin(TextPlugin);
 
 const items = [
   "Primary Care",
@@ -20,18 +26,93 @@ const items = [
   "Skin Care",
 ];
 
+const phrases = [
+  "Your Health, Simplified.",
+  "Your Health, Empowered.",
+  "Your Health, Reimagined.",
+  "Your Health, Seamless.",
+  "Your Health, Connected.",
+  "Your Health, Elevated.",
+  "Your Health, Streamlined.",
+  "Your Health, In Sync.",
+  "Your Health, Made Easy.",
+  "Your Health, Your Way.",
+];
+
 export const Frame = () => {
+  const yourHealthRef = useRef(null);
+
+  useGSAP(() => {
+    const tl = gsap.timeline({ repeat: -1, delay: 1 });
+    phrases.forEach((phrase) => {
+      tl.to(yourHealthRef.current, {
+        duration: 2,
+        text: `Your Health,<br />${phrase.split("Your Health, ")[1]}`,
+        ease: "power1.inOut",
+        delay: 1,
+      });
+    });
+  }, []);
+
   return (
     <div className="frame">
+      <div className="nav-bar">
+        <div className="logo-wrapper">
+          <Logo3 className="logo-3" />
+        </div>
+
+        <div className="div-28">
+          <div className="div-23">
+            <div className="text-wrapper-16">Service</div>
+
+            <SizeMediumColor
+              className="design-component-instance-node"
+              iconIcon={
+                <Icon12 className="expandmorefilled-1" color="#282725" />
+              }
+            />
+          </div>
+
+          <div className="div-23">
+            <div className="text-wrapper-16">Membership</div>
+
+            <SizeMediumColor
+              className="design-component-instance-node"
+              iconIcon={
+                <Icon12 className="expandmorefilled-1" color="#282725" />
+              }
+            />
+          </div>
+
+          <div className="text-wrapper-16">Locations</div>
+        </div>
+
+        <div className="div-23">
+          <Button
+            className="design-component-instance-node"
+            color="primary"
+            label="Log In"
+            size="large"
+            stateProp="enabled"
+            variant="text"
+          />
+          <Button
+            className="design-component-instance-node"
+            color="primary"
+            label="Join Tia"
+            size="large"
+            stateProp="enabled"
+            variant="contained"
+          />
+        </div>
+      </div>
       <div className="div-2">
         <div className="section-wrapper">
-          <div className="section">
+          <div className="hero">
             <div className="div-3">
               <div className="div-4">
-                <p className="your-health">
-                  <span className="span">Your Health, </span>
-
-                  <span className="text-wrapper-2">Personalized</span>
+                <p ref={yourHealthRef} className="your-health">
+                  Your Health, Personalized
                 </p>
 
                 <p className="p">
@@ -529,57 +610,6 @@ export const Frame = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="left-side">
-        <div className="logo-wrapper">
-          <Logo3 className="logo-3" />
-        </div>
-
-        <div className="div-28">
-          <div className="div-23">
-            <div className="text-wrapper-16">Service</div>
-
-            <SizeMediumColor
-              className="design-component-instance-node"
-              iconIcon={
-                <Icon12 className="expandmorefilled-1" color="#282725" />
-              }
-            />
-          </div>
-
-          <div className="div-23">
-            <div className="text-wrapper-16">Membership</div>
-
-            <SizeMediumColor
-              className="design-component-instance-node"
-              iconIcon={
-                <Icon12 className="expandmorefilled-1" color="#282725" />
-              }
-            />
-          </div>
-
-          <div className="text-wrapper-16">Locations</div>
-        </div>
-
-        <div className="div-23">
-          <Button
-            className="design-component-instance-node"
-            color="primary"
-            label="Join Tia"
-            size="large"
-            stateProp="enabled"
-            variant="contained"
-          />
-          <Button
-            className="design-component-instance-node"
-            color="primary"
-            label="Log In"
-            size="large"
-            stateProp="enabled"
-            variant="text"
-          />
-        </div>
-      </div> */}
     </div>
   );
 };
