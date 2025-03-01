@@ -1,0 +1,110 @@
+.pattern {
+  background-color: #ffffff;
+  height: 800px;
+  overflow: hidden;
+  width: 1400px;
+}
+
+.pattern .tia-linepattern-CMYK {
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.pattern .overlap-group {
+  height: 800px;
+  position: relative;
+  width: 1423px;
+}
+
+.pattern .img {
+  height: 800px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1420px;
+}
+
+.pattern .tia-linepattern-CMYK-2 {
+  height: 800px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1423px;
+}
+
+.pattern.one {
+  position: relative;
+}
+
+.pattern.six {
+  position: relative;
+}
+
+.pattern.two {
+  position: relative;
+}
+
+.pattern.four {
+  position: relative;
+}
+
+.pattern.half-tone {
+  position: relative;
+}
+
+.pattern.three {
+  position: relative;
+}
+
+.pattern.six .tia-linepattern-CMYK {
+  width: 1420px;
+}
+
+.pattern.lines .tia-linepattern-CMYK {
+  height: 800px;
+}
+
+.pattern.half-tone.four .tia-linepattern-CMYK {
+  height: 1118px;
+  width: 1400px;
+}
+
+.pattern.five.half-tone .tia-linepattern-CMYK {
+  height: 1120px;
+  width: 1400px;
+}
+
+.pattern.half-tone.three .tia-linepattern-CMYK {
+  height: 1120px;
+  width: 1400px;
+}
+
+.pattern.half-tone.one .tia-linepattern-CMYK {
+  height: 1122px;
+  width: 1400px;
+}
+
+.pattern.four.lines .tia-linepattern-CMYK {
+  width: 1420px;
+}
+
+.pattern.half-tone.two .tia-linepattern-CMYK {
+  height: 1120px;
+  width: 100vw;
+}
+
+.pattern.two.lines .tia-linepattern-CMYK {
+  width: 1422px;
+}
+
+.pattern.three.lines .tia-linepattern-CMYK {
+  width: 1422px;
+}
+
+.pattern.one.lines .tia-linepattern-CMYK {
+  width: 1422px;
+}

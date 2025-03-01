@@ -1,0 +1,1 @@
+export { SizeMediumColor } from "./SizeMediumColor";

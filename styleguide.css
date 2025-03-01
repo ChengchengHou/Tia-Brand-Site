@@ -1,0 +1,350 @@
+:root {
+  --avatar-initialslg-font-family: "Basis Grotesque Pro", Helvetica;
+  --avatar-initialslg-font-size: 20px;
+  --avatar-initialslg-font-style: normal;
+  --avatar-initialslg-font-weight: 400;
+  --avatar-initialslg-letter-spacing: 0.14000000059604645px;
+  --avatar-initialslg-line-height: 20px;
+  --avatar-initialsmd-font-family: "Basis Grotesque Pro", Helvetica;
+  --avatar-initialsmd-font-size: 12px;
+  --avatar-initialsmd-font-style: normal;
+  --avatar-initialsmd-font-weight: 400;
+  --avatar-initialsmd-letter-spacing: 0px;
+  --avatar-initialsmd-line-height: 12px;
+  --avatar-initialssm-font-family: "Basis Grotesque Pro", Helvetica;
+  --avatar-initialssm-font-size: 10px;
+  --avatar-initialssm-font-style: normal;
+  --avatar-initialssm-font-weight: 400;
+  --avatar-initialssm-letter-spacing: 0px;
+  --avatar-initialssm-line-height: 10px;
+  --badge-label-font-family: "Basis Grotesque Pro", Helvetica;
+  --badge-label-font-size: 12px;
+  --badge-label-font-style: normal;
+  --badge-label-font-weight: 400;
+  --badge-label-letter-spacing: 0.14000000059604645px;
+  --badge-label-line-height: 20px;
+  --button-large-font-family: "Basis Grotesque Pro", Helvetica;
+  --button-large-font-size: 15px;
+  --button-large-font-style: normal;
+  --button-large-font-weight: 700;
+  --button-large-letter-spacing: 0.46000000834465027px;
+  --button-large-line-height: 26px;
+  --button-medium-font-family: "Basis Grotesque Pro", Helvetica;
+  --button-medium-font-size: 14px;
+  --button-medium-font-style: normal;
+  --button-medium-font-weight: 400;
+  --button-medium-letter-spacing: 0.4000000059604645px;
+  --button-medium-line-height: 24px;
+  --button-small-font-family: "Basis Grotesque Pro", Helvetica;
+  --button-small-font-size: 13px;
+  --button-small-font-style: normal;
+  --button-small-font-weight: 400;
+  --button-small-letter-spacing: 0.46000000834465027px;
+  --button-small-line-height: 22px;
+  --chip-label-font-family: "Basis Grotesque Pro", Helvetica;
+  --chip-label-font-size: 13px;
+  --chip-label-font-style: normal;
+  --chip-label-font-weight: 400;
+  --chip-label-letter-spacing: 0.1599999964237213px;
+  --chip-label-line-height: 18px;
+  --elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --elevation-4: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  --elevation-6: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  --material-colors-amber-400: rgba(249, 177, 70, 1);
+  --material-colors-amber-700: rgba(196, 132, 43, 1);
+  --material-colors-amber-800: rgba(179, 116, 36, 1);
+  --material-colors-amber-900: rgba(157, 98, 28, 1);
+  --material-colors-green-400: rgba(198, 205, 140, 1);
+  --material-colors-green-50: rgba(242, 245, 232, 1);
+  --material-colors-green-700: rgba(143, 162, 109, 1);
+  --material-colors-green-800: rgba(111, 138, 80, 1);
+  --material-colors-green-900: rgba(80, 105, 52, 1);
+  --material-colors-grey-100: rgba(232, 232, 230, 1);
+  --material-colors-grey-300: rgba(186, 186, 182, 1);
+  --material-colors-grey-400: rgba(158, 158, 153, 1);
+  --material-colors-grey-600: rgba(101, 101, 97, 1);
+  --material-colors-grey-700: rgba(76, 76, 72, 1);
+  --material-colors-grey-800: rgba(57, 57, 53, 1);
+  --material-colors-grey-900: rgba(40, 39, 37, 1);
+  --material-colors-lightblue-400: rgba(41, 182, 246, 1);
+  --material-colors-lightblue-700: rgba(2, 136, 209, 1);
+  --material-colors-lightblue-900: rgba(1, 87, 155, 1);
+  --material-colors-pink-200: rgba(244, 143, 177, 1);
+  --material-colors-pink-400: rgba(239, 48, 141, 1);
+  --material-colors-pink-50: rgba(252, 228, 236, 1);
+  --material-colors-pink-800: rgba(131, 26, 74, 1);
+  --material-colors-pink-900: rgba(79, 11, 44, 1);
+  --material-colors-red-500: rgba(226, 76, 64, 1);
+  --material-colors-red-700: rgba(182, 57, 50, 1);
+  --material-colors-red-800: rgba(182, 57, 50, 1);
+  --material-colors-terra-100: rgba(252, 244, 233, 1);
+  --material-colors-terra-200: rgba(241, 229, 216, 1);
+  --material-colors-terra-300: rgba(236, 220, 205, 1);
+  --material-colors-terra-400: rgba(212, 168, 168, 1);
+  --material-colors-terra-50: rgba(254, 249, 244, 1);
+  --material-colors-terra-500: rgba(190, 145, 145, 1);
+  --material-colors-terra-700: rgba(118, 84, 84, 1);
+  --paddings-border-radius: 8px;
+  --paddings-padding-16: 16px;
+  --paddings-padding-24: 24px;
+  --paddings-padding-8: 8px;
+  --palette-action-active: rgba(40, 39, 37, 0.56);
+  --palette-action-disabled: rgba(40, 39, 37, 0.38);
+  --palette-action-disabledbackground: rgba(40, 39, 37, 0.12);
+  --palette-action-focus: rgba(40, 39, 37, 0.12);
+  --palette-action-hover: rgba(40, 39, 37, 0.04);
+  --palette-action-selected: rgba(40, 39, 37, 0.08);
+  --palette-background-default: rgba(252, 244, 233, 1);
+  --palette-background-paper-elevation-0: rgba(236, 220, 205, 1);
+  --palette-background-paper-elevation-1: rgba(255, 255, 255, 1);
+  --palette-common-white-states-main: rgba(255, 255, 255, 1);
+  --palette-components-avatar-fill: var(--material-colors-grey-800);
+  --palette-components-chip-defaultenabledborder: var(
+    --material-colors-grey-400
+  );
+  --palette-components-chip-defaultfocusfill: rgba(0, 0, 0, 0.2);
+  --palette-components-chip-defaulthoverfill: rgba(0, 0, 0, 0.12);
+  --palette-components-rating-enabledborder: rgba(0, 0, 0, 0.23);
+  --palette-divider: rgba(236, 220, 205, 1);
+  --palette-error-contrasttext: rgba(255, 255, 255, 1);
+  --palette-error-dark: var(--material-colors-red-800);
+  --palette-error-main: var(--material-colors-red-700);
+  --palette-error-states-focusvisible: rgba(249, 86, 71, 0.3);
+  --palette-error-states-hover: rgba(249, 86, 71, 0.04);
+  --palette-error-states-outlinedborder: rgba(249, 86, 71, 0.5);
+  --palette-info-contrasttext: rgba(255, 255, 255, 1);
+  --palette-info-dark: var(--material-colors-lightblue-900);
+  --palette-info-main: var(--material-colors-lightblue-700);
+  --palette-info-states-focusvisible: rgba(2, 136, 209, 0.3);
+  --palette-info-states-hover: rgba(2, 136, 209, 0.04);
+  --palette-info-states-outlinedborder: rgba(2, 136, 209, 0.5);
+  --palette-primary-contrasttext: rgba(255, 255, 255, 1);
+  --palette-primary-dark: var(--material-colors-pink-900);
+  --palette-primary-main: var(--material-colors-pink-800);
+  --palette-primary-states-focus: rgba(239, 48, 141, 0.12);
+  --palette-primary-states-focusvisible: rgba(239, 48, 141, 0.3);
+  --palette-primary-states-hover: rgba(239, 48, 141, 0.04);
+  --palette-primary-states-outlinedborder: rgba(239, 48, 141, 0.5);
+  --palette-secondary-contrasttext: rgba(255, 255, 255, 1);
+  --palette-secondary-dark: var(--material-colors-terra-700);
+  --palette-secondary-main: var(--material-colors-terra-500);
+  --palette-secondary-states-focus: rgba(156, 39, 176, 0.12);
+  --palette-secondary-states-focusvisible: rgba(156, 39, 176, 0.3);
+  --palette-secondary-states-hover: rgba(156, 39, 176, 0.04);
+  --palette-secondary-states-outlinedborder: rgba(156, 39, 176, 0.5);
+  --palette-success-contrasttext: rgba(255, 255, 255, 1);
+  --palette-success-dark: var(--material-colors-green-900);
+  --palette-success-main: var(--material-colors-green-800);
+  --palette-success-states-focusvisible: rgba(209, 215, 163, 0.3);
+  --palette-success-states-hover: rgba(209, 215, 163, 0.04);
+  --palette-success-states-outlinedborder: rgba(209, 215, 163, 0.5);
+  --palette-text-primary: rgba(40, 39, 37, 1);
+  --palette-text-secondary: var(--material-colors-terra-700);
+  --palette-warning-contrasttext: rgba(255, 255, 255, 1);
+  --palette-warning-dark: var(--material-colors-amber-900);
+  --palette-warning-main: var(--material-colors-amber-800);
+  --palette-warning-states-focusvisible: rgba(213, 147, 50, 0.3);
+  --palette-warning-states-hover: rgba(213, 147, 50, 0.04);
+  --palette-warning-states-outlinedborder: rgba(213, 147, 50, 0.5);
+  --shape-borderradius: 8px;
+  --spacing-1: 8px;
+  --spacing-12: 96px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-6: 48px;
+  --spacing-7: 56px;
+  --typography-body1-font-family: "Basis Grotesque Pro", Helvetica;
+  --typography-body1-font-size: 16px;
+  --typography-body1-font-style: normal;
+  --typography-body1-font-weight: 400;
+  --typography-body1-letter-spacing: 0.08px;
+  --typography-body1-line-height: 20px;
+  --typography-body2-font-family: "Basis Grotesque Pro", Helvetica;
+  --typography-body2-font-size: 14px;
+  --typography-body2-font-style: normal;
+  --typography-body2-font-weight: 400;
+  --typography-body2-letter-spacing: 0.17000000178813934px;
+  --typography-body2-line-height: 16px;
+  --typography-h1-font-family: "Inferi", Helvetica;
+  --typography-h1-font-size: 48px;
+  --typography-h1-font-style: normal;
+  --typography-h1-font-weight: 400;
+  --typography-h1-letter-spacing: 0px;
+  --typography-h1-line-height: 56px;
+  --typography-h3-font-family: "Inferi", Helvetica;
+  --typography-h3-font-size: 32px;
+  --typography-h3-font-style: normal;
+  --typography-h3-font-weight: 400;
+  --typography-h3-letter-spacing: 0px;
+  --typography-h3-line-height: 34px;
+  --typography-h4-font-family: "Inferi", Helvetica;
+  --typography-h4-font-size: 24px;
+  --typography-h4-font-style: normal;
+  --typography-h4-font-weight: 400;
+  --typography-h4-letter-spacing: 0px;
+  --typography-h4-line-height: 32px;
+  --typography-h5-font-family: "Basis Grotesque Pro", Helvetica;
+  --typography-h5-font-size: 20px;
+  --typography-h5-font-style: normal;
+  --typography-h5-font-weight: 400;
+  --typography-h5-letter-spacing: 0px;
+  --typography-h5-line-height: 24px;
+  --typography-h6-font-family: "Basis Grotesque Pro", Helvetica;
+  --typography-h6-font-size: 18px;
+  --typography-h6-font-style: normal;
+  --typography-h6-font-weight: 700;
+  --typography-h6-letter-spacing: 0px;
+  --typography-h6-line-height: 24px;
+  --typography-overline-font-family: "Basis Grotesque Mono", Helvetica;
+  --typography-overline-font-size: 12px;
+  --typography-overline-font-style: normal;
+  --typography-overline-font-weight: 400;
+  --typography-overline-letter-spacing: 1.2px;
+  --typography-overline-line-height: 16px;
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-palette-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-palette-mode="light"] {
+  --palette-action-active: rgba(40, 39, 37, 0.56);
+  --palette-action-disabled: rgba(40, 39, 37, 0.38);
+  --palette-action-disabledbackground: rgba(40, 39, 37, 0.12);
+  --palette-action-focus: rgba(40, 39, 37, 0.12);
+  --palette-action-hover: rgba(40, 39, 37, 0.04);
+  --palette-action-selected: rgba(40, 39, 37, 0.08);
+  --palette-background-default: rgba(252, 244, 233, 1);
+  --palette-background-paper-elevation-0: rgba(236, 220, 205, 1);
+  --palette-background-paper-elevation-1: rgba(255, 255, 255, 1);
+  --palette-components-avatar-fill: var(--material-colors-grey-800);
+  --palette-components-chip-defaultenabledborder: var(
+    --material-colors-grey-400
+  );
+  --palette-components-chip-defaultfocusfill: rgba(0, 0, 0, 0.2);
+  --palette-components-chip-defaulthoverfill: rgba(0, 0, 0, 0.12);
+  --palette-components-rating-enabledborder: rgba(0, 0, 0, 0.23);
+  --palette-divider: rgba(236, 220, 205, 1);
+  --palette-error-dark: var(--material-colors-red-800);
+  --palette-error-main: var(--material-colors-red-700);
+  --palette-error-states-hover: rgba(249, 86, 71, 0.04);
+  --palette-info-contrasttext: rgba(255, 255, 255, 1);
+  --palette-info-dark: var(--material-colors-lightblue-900);
+  --palette-info-main: var(--material-colors-lightblue-700);
+  --palette-info-states-focusvisible: rgba(2, 136, 209, 0.3);
+  --palette-info-states-hover: rgba(2, 136, 209, 0.04);
+  --palette-info-states-outlinedborder: rgba(2, 136, 209, 0.5);
+  --palette-primary-contrasttext: rgba(255, 255, 255, 1);
+  --palette-primary-dark: var(--material-colors-pink-900);
+  --palette-primary-main: var(--material-colors-pink-800);
+  --palette-primary-states-focus: rgba(239, 48, 141, 0.12);
+  --palette-primary-states-focusvisible: rgba(239, 48, 141, 0.3);
+  --palette-primary-states-hover: rgba(239, 48, 141, 0.04);
+  --palette-primary-states-outlinedborder: rgba(239, 48, 141, 0.5);
+  --palette-secondary-contrasttext: rgba(255, 255, 255, 1);
+  --palette-secondary-dark: var(--material-colors-terra-700);
+  --palette-secondary-main: var(--material-colors-terra-500);
+  --palette-secondary-states-focus: rgba(156, 39, 176, 0.12);
+  --palette-secondary-states-focusvisible: rgba(156, 39, 176, 0.3);
+  --palette-secondary-states-hover: rgba(156, 39, 176, 0.04);
+  --palette-secondary-states-outlinedborder: rgba(156, 39, 176, 0.5);
+  --palette-success-contrasttext: rgba(255, 255, 255, 1);
+  --palette-success-dark: var(--material-colors-green-900);
+  --palette-success-main: var(--material-colors-green-800);
+  --palette-success-states-focusvisible: rgba(209, 215, 163, 0.3);
+  --palette-success-states-hover: rgba(209, 215, 163, 0.04);
+  --palette-success-states-outlinedborder: rgba(209, 215, 163, 0.5);
+  --palette-text-primary: rgba(40, 39, 37, 1);
+  --palette-text-secondary: var(--material-colors-terra-700);
+  --palette-warning-contrasttext: rgba(255, 255, 255, 1);
+  --palette-warning-dark: var(--material-colors-amber-900);
+  --palette-warning-main: var(--material-colors-amber-800);
+  --palette-warning-states-focusvisible: rgba(213, 147, 50, 0.3);
+  --palette-warning-states-hover: rgba(213, 147, 50, 0.04);
+  --palette-warning-states-outlinedborder: rgba(213, 147, 50, 0.5);
+}
+
+[data-palette-mode="dark"] {
+  --palette-action-active: rgba(255, 255, 255, 0.56);
+  --palette-action-disabled: rgba(255, 255, 255, 0.38);
+  --palette-action-disabledbackground: rgba(255, 255, 255, 0.12);
+  --palette-action-focus: rgba(255, 255, 255, 0.12);
+  --palette-action-hover: rgba(255, 255, 255, 0.08);
+  --palette-action-selected: rgba(255, 255, 255, 0.16);
+  --palette-background-default: rgba(40, 39, 37, 1);
+  --palette-background-paper-elevation-0: rgba(46, 44, 42, 1);
+  --palette-background-paper-elevation-1: rgba(46, 44, 42, 1);
+  --palette-components-avatar-fill: var(--material-colors-grey-600);
+  --palette-components-chip-defaultenabledborder: var(
+    --material-colors-grey-700
+  );
+  --palette-components-chip-defaultfocusfill: rgba(255, 255, 255, 0.2);
+  --palette-components-chip-defaulthoverfill: rgba(255, 255, 255, 0.12);
+  --palette-components-rating-enabledborder: rgba(255, 255, 255, 0.23);
+  --palette-divider: rgba(255, 255, 255, 0.12);
+  --palette-error-dark: var(--material-colors-red-700);
+  --palette-error-main: var(--material-colors-red-500);
+  --palette-error-states-hover: rgba(249, 86, 71, 0.08);
+  --palette-info-contrasttext: rgba(0, 0, 0, 0.87);
+  --palette-info-dark: var(--material-colors-lightblue-700);
+  --palette-info-main: var(--material-colors-lightblue-400);
+  --palette-info-states-focusvisible: rgba(41, 182, 246, 0.3);
+  --palette-info-states-hover: rgba(41, 182, 246, 0.08);
+  --palette-info-states-outlinedborder: rgba(41, 182, 246, 0.5);
+  --palette-primary-contrasttext: rgba(17, 17, 17, 0.87);
+  --palette-primary-dark: var(--material-colors-pink-400);
+  --palette-primary-main: var(--material-colors-pink-200);
+  --palette-primary-states-focus: rgba(248, 187, 224, 0.12);
+  --palette-primary-states-focusvisible: rgba(248, 187, 224, 0.3);
+  --palette-primary-states-hover: rgba(248, 187, 224, 0.08);
+  --palette-primary-states-outlinedborder: rgba(248, 187, 224, 0.5);
+  --palette-secondary-contrasttext: rgba(0, 0, 0, 0.87);
+  --palette-secondary-dark: var(--material-colors-terra-400);
+  --palette-secondary-main: var(--material-colors-terra-200);
+  --palette-secondary-states-focus: rgba(206, 147, 216, 0.12);
+  --palette-secondary-states-focusvisible: rgba(206, 147, 216, 0.3);
+  --palette-secondary-states-hover: rgba(206, 147, 216, 0.08);
+  --palette-secondary-states-outlinedborder: rgba(206, 147, 216, 0.5);
+  --palette-success-contrasttext: rgba(0, 0, 0, 0.87);
+  --palette-success-dark: var(--material-colors-green-700);
+  --palette-success-main: var(--material-colors-green-400);
+  --palette-success-states-focusvisible: rgba(198, 205, 140, 0.3);
+  --palette-success-states-hover: rgba(198, 205, 140, 0.08);
+  --palette-success-states-outlinedborder: rgba(198, 205, 140, 0.5);
+  --palette-text-primary: rgba(255, 255, 255, 0.87);
+  --palette-text-secondary: rgba(255, 255, 255, 0.6);
+  --palette-warning-contrasttext: rgba(0, 0, 0, 0.87);
+  --palette-warning-dark: var(--material-colors-amber-700);
+  --palette-warning-main: var(--material-colors-amber-400);
+  --palette-warning-states-focusvisible: rgba(249, 177, 70, 0.3);
+  --palette-warning-states-hover: rgba(249, 177, 70, 0.08);
+  --palette-warning-states-outlinedborder: rgba(249, 177, 70, 0.5);
+}
+
+[data-paddings-mode="mode-1"] {
+  --paddings-border-radius: 8px;
+  --paddings-padding-16: 16px;
+  --paddings-padding-24: 24px;
+  --paddings-padding-8: 8px;
+}
+
+[data-paddings-mode="mode-2"] {
+  --paddings-border-radius: 0px;
+  --paddings-padding-16: 0px;
+  --paddings-padding-24: 0px;
+  --paddings-padding-8: 0px;
+}

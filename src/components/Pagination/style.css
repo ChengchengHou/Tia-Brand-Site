@@ -1,0 +1,47 @@
+.pagination {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 6px;
+  padding: 0px 6px;
+  position: relative;
+}
+
+.pagination .pagination-item {
+  position: relative !important;
+}
+
+.pagination .class {
+  height: 20px !important;
+  left: 6px !important;
+  position: absolute !important;
+  top: 6px !important;
+  width: 20px !important;
+}
+
+.pagination .class-2 {
+  height: 18px !important;
+  left: 4px !important;
+  position: absolute !important;
+  top: 4px !important;
+  width: 18px !important;
+}
+
+.pagination .icon-instance-node {
+  height: 22px !important;
+  left: 9px !important;
+  position: absolute !important;
+  top: 9px !important;
+  width: 22px !important;
+}
+
+.pagination .class-3 {
+  left: 12px !important;
+}
+
+.pagination .class-4 {
+  left: 9px !important;
+}
+
+.pagination .class-5 {
+  left: 16px !important;
+}

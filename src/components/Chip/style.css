@@ -1,0 +1,122 @@
+.chip {
+  align-items: center;
+  border-radius: 100px;
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.chip .typography {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 24px;
+  padding: 0px 6px;
+  position: relative;
+}
+
+.chip .div {
+  font-family: var(--chip-label-font-family);
+  font-size: var(--chip-label-font-size);
+  font-style: var(--chip-label-font-style);
+  font-weight: var(--chip-label-font-weight);
+  letter-spacing: var(--chip-label-letter-spacing);
+  line-height: var(--chip-label-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.chip.state-0-disabled {
+  opacity: 0.38;
+}
+
+.chip.state-0-pressed {
+  box-shadow: var(--elevation-1);
+}
+
+.chip {
+  background-color: var(--palette-primary-dark);
+}
+
+.chip.variant-1-filled.color-0-warning {
+  background-color: var(--palette-primary-dark);
+}
+
+.chip.color-0-secondary.variant-1-filled {
+  background-color: var(--palette-primary-dark);
+}
+
+.chip.variant-1-filled.color-0-info {
+  background-color: var(--palette-primary-dark);
+}
+
+.chip.color-0-primary.variant-1-filled {
+  background-color: var(--palette-primary-dark);
+}
+
+.chip.color-0-success.variant-1-filled {
+  background-color: var(--palette-primary-dark);
+}
+
+.chip.color-0-error.variant-1-filled {
+  background-color: var(--palette-primary-dark);
+}
+
+.chip.variant-1-filled.color-0-default {
+}
+
+.chip.color-0-primary.variant-1-outlined {
+}
+
+.chip.color-0-secondary.variant-1-outlined {
+}
+
+.chip.color-0-success.variant-1-outlined {
+}
+
+.chip.color-0-error.variant-1-outlined {
+}
+
+.chip.variant-1-outlined.color-0-warning {
+}
+
+.chip.color-0-default.variant-1-outlined {
+}
+
+.chip.variant-1-outlined.color-0-info {
+}
+
+.chip:hover.variant-1-filled.color-0-default {
+  background-color: var(--palette-components-chip-defaulthoverfill);
+}
+
+.chip:hover.color-0-primary.variant-1-outlined {
+  background-color: var(--palette-primary-states-hover);
+}
+
+.chip:hover.color-0-secondary.variant-1-outlined {
+  background-color: var(--palette-secondary-states-hover);
+}
+
+.chip:hover.color-0-success.variant-1-outlined {
+  background-color: var(--palette-success-states-hover);
+}
+
+.chip:hover.color-0-error.variant-1-outlined {
+  background-color: var(--palette-error-states-hover);
+}
+
+.chip:hover.variant-1-outlined.color-0-warning {
+  background-color: var(--palette-warning-states-hover);
+}
+
+.chip:hover.color-0-default.variant-1-outlined {
+  background-color: var(--palette-action-hover);
+}
+
+.chip:hover.variant-1-outlined.color-0-info {
+  background-color: var(--palette-info-states-hover);
+}

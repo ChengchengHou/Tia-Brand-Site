@@ -1,0 +1,56 @@
+.icon {
+  align-items: flex-start;
+  position: relative;
+}
+
+.icon .material-icons {
+  color: var(--palette-action-active);
+  font-family: "Material Icons", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.icon .icon-8 {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.icon.size-4-inherit {
+  display: flex;
+  height: 16px;
+  width: 16px;
+}
+
+.icon.size-4-large {
+  display: inline-flex;
+}
+
+.icon.size-4-medium {
+  display: inline-flex;
+}
+
+.icon.size-4-small {
+  display: inline-flex;
+}
+
+.icon.size-4-inherit .material-icons {
+  font-size: 16px;
+}
+
+.icon.size-4-large .material-icons {
+  font-size: 35px;
+}
+
+.icon.size-4-medium .material-icons {
+  font-size: 24px;
+}
+
+.icon.size-4-small .material-icons {
+  font-size: 20px;
+}
