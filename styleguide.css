@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Inferi";
+  src: url("/assets/Inferi-Normal.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --avatar-initialslg-font-family: "Basis Grotesque Pro", Helvetica;
   --avatar-initialslg-font-size: 20px;

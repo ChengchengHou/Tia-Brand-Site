@@ -11,7 +11,7 @@ const MarqueeComponent = ({ items, direction = "right", speed = 50 }) => {
         autoFill={true} // ✅ Automatically removes white gaps
         gradient={false}
         className={styles.marqueeContent}
-        pauseOnHover={true}
+        // pauseOnHover={true}
       >
         {items.map((item, index) => (
           <span key={index} className={styles.marqueeItem}>
