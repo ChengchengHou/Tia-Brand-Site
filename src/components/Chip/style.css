@@ -38,7 +38,7 @@
 }
 
 .chip {
-  background-color: var(--palette-primary-dark);
+  background-color: var(--material-colors-grey-100);
 }
 
 .chip.variant-1-filled.color-0-warning {

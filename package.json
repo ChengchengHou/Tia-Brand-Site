@@ -17,7 +17,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.5",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.4.6",

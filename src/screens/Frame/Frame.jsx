@@ -8,15 +8,18 @@ import { SizeMediumColor } from "../../components/SizeMediumColor";
 import { Chevronleftfilled83 } from "../../icons/Chevronleftfilled83";
 import { Chevronrightfilled147 } from "../../icons/Chevronrightfilled147";
 import { Icon12 } from "../../icons/Icon12";
-import { Logo2 } from "../../icons/Logo2";
 import { Logo3 } from "../../icons/Logo3";
 import "./style.css";
 import MarqueeComponent from "../../components/Marquee/Marquee";
+import Footer from "../../components/Footer/Footer";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(useGSAP);
 
 const items = [
   "Primary Care",
@@ -40,15 +43,17 @@ const phrases = [
 ];
 
 export const Frame = () => {
+  // GSAP User Ref
   const yourHealthRef = useRef(null);
 
+  // GSAP Text Animation
   useGSAP(() => {
     const tl = gsap.timeline({ repeat: -1, delay: 1 });
     phrases.forEach((phrase) => {
       tl.to(yourHealthRef.current, {
         duration: 2,
         text: `Your Health,<br />${phrase.split("Your Health, ")[1]}`,
-        ease: "power1.inOut",
+        ease: "power1.Out",
         delay: 1,
       });
     });
@@ -149,8 +154,8 @@ export const Frame = () => {
         </div>
 
         <div className="marquee-wrapper">
-          <MarqueeComponent items={items} direction="right" speed={50} />
-          <MarqueeComponent items={items} direction="left" speed={40} />
+          <MarqueeComponent items={items} direction="right" speed={40} />
+          <MarqueeComponent items={items} direction="left" speed={35} />
         </div>
 
         <div className="div-wrapper">
@@ -496,119 +501,7 @@ export const Frame = () => {
           </div>
         </div>
 
-        <div className="section-4">
-          <div className="div-24">
-            <Logo2 className="logo" />
-            <div className="text-wrapper-12">Your Health, Personalized</div>
-          </div>
-
-          <div className="div-25">
-            <p className="contact-asktia-tia">
-              <span className="text-wrapper-13">
-                Contact
-                <br />
-              </span>
-
-              <span className="text-wrapper-14">
-                asktia@tia.com
-                <br />
-              </span>
-
-              <a
-                href="tel:+38589239090"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span className="text-wrapper-14">1</span>
-              </a>
-
-              <span className="text-wrapper-14">23 456 7890</span>
-            </p>
-
-            <div className="div-26">
-              Company
-              <br />
-              Team
-              <br />
-              DEI
-              <br />
-              Careers
-              <br />
-              Community
-              <br />
-              Press
-              <br />
-              FAQ
-              <br />
-              Contact
-              <br />
-              BLOG
-            </div>
-
-            <p className="div-26">
-              <a
-                href="https://assets.asktia.com/pdfs/tia-privacy-policy.pdf"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span className="text-wrapper-15">
-                  NPP
-                  <br />
-                </span>
-              </a>
-
-              <a
-                href="https://asktia.com/membership-terms-of-use"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span className="text-wrapper-15">
-                  Membership Terms
-                  <br />
-                </span>
-              </a>
-
-              <a
-                href="https://asktia.com/website-terms-of-use"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span className="text-wrapper-15">
-                  Website Terms
-                  <br />
-                </span>
-              </a>
-
-              <a
-                href="https://asktia.com/privacy-policy"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span className="text-wrapper-15">Privacy Policy</span>
-              </a>
-
-              <a
-                href="https://asktia.com/credits"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span className="text-wrapper-15">Credits</span>
-              </a>
-            </p>
-
-            <div className="div-26">
-              Twitter
-              <br />
-              Instagram
-              <br />
-              Titkok
-            </div>
-          </div>
-
-          <div className="div-27">
-            <div className="text-wrapper-9">© Tia 2025</div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </div>
   );
