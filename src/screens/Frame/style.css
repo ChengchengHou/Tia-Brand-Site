@@ -877,11 +877,3 @@ body {
   background-color: var(--material-colors-terra-100);
   max-width: 100vw;
 }
-
-a {
-  color: var(--palette-primary-main);
-}
-
-a:hover {
-  text-decoration: underline;
-}

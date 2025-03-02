@@ -11,11 +11,12 @@ import { Icon12 } from "../../icons/Icon12";
 import { Logo3 } from "../../icons/Logo3";
 import "./style.css";
 import MarqueeComponent from "../../components/Marquee/Marquee";
-import Footer from "../../components/Footer/Footer";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TextPlugin } from "gsap/TextPlugin";
+import Footer from "../../components/Footer/Footer";
+import Partner from "../../components/Partner/Partner";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -244,25 +245,8 @@ export const Frame = () => {
             </div>
           </div>
         </div>
-
+        <Partner />
         <div className="section-2">
-          <div className="div-9">
-            <div className="div-12">
-              <div className="text-wrapper-6">Meet our specialist partners</div>
-
-              <p className="text-wrapper-7">
-                As a member, your Care Team extends beyond Tia: you’re also
-                supported by providers at top-tier health systems—including
-                Cedars-Sinai, UCSF Health and CommonSpirit Health—that make it
-                easy to get specialty care when you need it.
-              </p>
-            </div>
-
-            <div className="image-wrapper-2">
-              <img className="image-3" alt="Image" src="/img/image-5-1.png" />
-            </div>
-          </div>
-
           <div className="div-13">
             <div className="div-14">
               <div className="div-15">
@@ -462,41 +446,6 @@ export const Frame = () => {
                 Holistic care plans tailored to your unique body and mind,
                 helping you thrive through perimenopause.
               </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="div-21">
-          <Pattern
-            className="pattern-3"
-            option="two"
-            tiaLinepatternCmykClassName="pattern-4"
-            version="half-tone"
-          />
-          <div className="div-22">
-            <p className="still-have-questions">
-              Still have questions about Tia?
-              <br />
-              Call us at 1-646-650-5337
-            </p>
-
-            <div className="div-23">
-              <Button
-                className="design-component-instance-node"
-                color="primary"
-                label="Join Tia"
-                size="large"
-                stateProp="enabled"
-                variant="contained"
-              />
-              <Button
-                className="design-component-instance-node"
-                color="inherit-white"
-                label="Learn about our service"
-                size="large"
-                stateProp="enabled"
-                variant="outlined"
-              />
             </div>
           </div>
         </div>

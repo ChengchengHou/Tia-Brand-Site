@@ -1,3 +1,18 @@
+.footer {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--material-colors-green-50);
+  border: 0px none;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  margin-bottom: -0.41px;
+  padding: 80px 129px;
+  position: relative;
+  width: 100%;
+}
+
 .div-25 {
   align-items: flex-start;
   align-self: stretch;
@@ -10,6 +25,7 @@
   padding: 0px 0px var(--spacing-3) 0px;
   position: relative;
   width: 100%;
+  justify-content: space-between;
 }
 
 .contact-asktia-tia {
@@ -22,15 +38,6 @@
   margin-top: -1px;
   position: relative;
   width: 504px;
-}
-
-.text-wrapper-13 {
-  font-family: var(--typography-h6-font-family);
-  font-size: var(--typography-h6-font-size);
-  font-style: var(--typography-h6-font-style);
-  font-weight: var(--typography-h6-font-weight);
-  letter-spacing: var(--typography-h6-letter-spacing);
-  line-height: var(--typography-h6-line-height);
 }
 
 .text-wrapper-14 {
@@ -53,6 +60,25 @@
   line-height: var(--typography-h5-line-height);
   margin-top: -1px;
   position: relative;
+}
+
+.utitliy-links {
+  color: #000000;
+  flex: 0 0 auto;
+  font-family: var(--typography-h5-font-family);
+  font-size: var(--typography-h5-font-size);
+  font-style: var(--typography-h5-font-style);
+  font-weight: var(--typography-h5-font-weight);
+  letter-spacing: var(--typography-h5-letter-spacing);
+  line-height: var(--typography-h5-line-height);
+  margin-top: -1px;
+  position: relative;
+  display: flex;
+  flex-direction: row; /* Ensure links are in a row */
+  justify-content: center; /* Adjust spacing between links */
+  align-items: center; /* Align vertically */
+  width: 100%; /* Ensures it takes full width */
+  gap: 24px;
 }
 
 .text-wrapper-15 {
@@ -78,4 +104,14 @@
   padding: 0px 0px var(--spacing-3) 0px;
   position: relative;
   width: 100%;
+}
+
+a {
+  color: var(--palette-text-primary);
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--palette-primary-main);
 }

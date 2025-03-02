@@ -1,10 +1,10 @@
 import React from "react";
 import { Logo2 } from "../../icons/Logo2";
-import "./Footer.module.css";
+import "./style.css";
 
 const Footer = () => {
   return (
-    <footer className="section-4">
+    <footer className="footer">
       <div className="div-24">
         <Logo2 className="logo" />
         <div className="text-wrapper-12">Your Health, Personalized</div>
@@ -12,10 +12,6 @@ const Footer = () => {
 
       <div className="div-25">
         <p className="contact-asktia-tia">
-          <span className="text-wrapper-13">
-            Contact
-            <br />
-          </span>
           <a className="text-wrapper-14">
             asktia@tia.com
             <br />
@@ -60,56 +56,6 @@ const Footer = () => {
         <div className="div-26">
           <ul>
             <li>
-              <a
-                href="https://assets.asktia.com/pdfs/tia-privacy-policy.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                NPP
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://asktia.com/membership-terms-of-use"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Membership Terms
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://asktia.com/website-terms-of-use"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Website Terms
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://asktia.com/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://asktia.com/credits"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Credits
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="div-26">
-          <ul>
-            <li>
               <a>Twitter</a>
             </li>
             <li>
@@ -123,7 +69,39 @@ const Footer = () => {
       </div>
 
       <div className="div-27">
-        <div className="text-wrapper-9">© Tia 2025</div>
+        <div className="text-wrapper-9">© Tia 2025. All rights reserved.</div>
+      </div>
+
+      <div className="utitliy-links">
+        <a
+          href="https://assets.asktia.com/pdfs/tia-privacy-policy.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NPP
+        </a>
+        <a
+          href="https://asktia.com/membership-terms-of-use"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Membership Terms
+        </a>
+        <a
+          href="https://asktia.com/privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy
+        </a>
+
+        <a
+          href="https://asktia.com/credits"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Credits
+        </a>
       </div>
     </footer>
   );
