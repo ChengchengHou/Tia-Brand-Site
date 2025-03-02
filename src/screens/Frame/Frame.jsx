@@ -17,6 +17,8 @@ import { ScrollTrigger } from "gsap/all";
 import { TextPlugin } from "gsap/TextPlugin";
 import Footer from "../../components/Footer/Footer";
 import Partner from "../../components/Partner/Partner";
+import SplitType from "split-type";
+import Insurance from "../../components/Insurance/Insurance";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -57,6 +59,43 @@ export const Frame = () => {
         ease: "power1.Out",
         delay: 1,
       });
+    });
+  }, []);
+
+  // GSAP Scroll Effect for Text Appearance
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".animated-text");
+
+    elements.forEach((element) => {
+      const text = new SplitType(element, { types: "chars" });
+
+      gsap.fromTo(
+        text.chars,
+        {
+          opacity: 0,
+          y: 5,
+          filter: "blur(4px)",
+        },
+        {
+          scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            end: "top 40%",
+            toggleActions: "play none none none",
+            scrub: false,
+          },
+          opacity: 1,
+          y: 0,
+          filter: "blur(0px)",
+          ease: "power2.out",
+          stagger: 0.015,
+          duration: 0.35,
+        }
+      );
+
+      // Cleanup on unmount
+      return () => text.revert();
     });
   }, []);
 
@@ -167,7 +206,7 @@ export const Frame = () => {
                   EVERYTHING YOU NEED TO DELIVER EXCEPTIONAL CUSTOMER SERVICE
                 </p>
 
-                <p className="world-class-women-s">
+                <p className="world-class-women-s animated-text">
                   World-class women’s health experts <br />
                   Meet a few of our trusted providers who specialize in women’s
                   healthcare.
@@ -246,87 +285,15 @@ export const Frame = () => {
           </div>
         </div>
         <Partner />
-        <div className="section-2">
-          <div className="div-13">
-            <div className="div-14">
-              <div className="div-15">
-                <img className="image-4" alt="Image" src="/img/image-7-1.png" />
-
-                <img className="image-5" alt="Image" src="/img/image-6-1.png" />
-
-                <img className="image-5" alt="Image" src="/img/image-9-1.png" />
-
-                <img
-                  className="image-6"
-                  alt="Image"
-                  src="/img/image-12-1.png"
-                />
-
-                <img
-                  className="image-7"
-                  alt="Image"
-                  src="/img/image-16-1.png"
-                />
-
-                <img
-                  className="image-8"
-                  alt="Image"
-                  src="/img/image-15-1.png"
-                />
-              </div>
-
-              <div className="div-16">
-                <img
-                  className="image-9"
-                  alt="Image"
-                  src="/img/image-13-1.png"
-                />
-
-                <img
-                  className="image-10"
-                  alt="Image"
-                  src="/img/image-14-1.png"
-                />
-
-                <img
-                  className="image-11"
-                  alt="Image"
-                  src="/img/image-18-1.png"
-                />
-
-                <img
-                  className="image-11"
-                  alt="Image"
-                  src="/img/image-17-1.png"
-                />
-
-                <img
-                  className="image-12"
-                  alt="Image"
-                  src="/img/image-19-1.png"
-                />
-              </div>
-            </div>
-
-            <div className="div-12">
-              <div className="text-wrapper-6">Yes, we take insurance</div>
-
-              <p className="text-wrapper-7">
-                As a member, your Care Team extends beyond Tia: you’re also
-                supported by providers at top-tier health systems—including
-                Cedars-Sinai, UCSF Health and CommonSpirit Health—that make it
-                easy to get specialty care when you need it.
-              </p>
-            </div>
-          </div>
-        </div>
 
         <div className="div-wrapper">
           <div className="div-7">
             <div className="div-8">
               <div className="text-wrapper-3">TESTIMONIALS</div>
 
-              <p className="text-wrapper-8">Why our members love Tia</p>
+              <p className="text-wrapper-8 animated-text">
+                Why our members love Tia
+              </p>
             </div>
 
             <div className="div-9">
@@ -449,7 +416,7 @@ export const Frame = () => {
             </div>
           </div>
         </div>
-
+        <Insurance />
         <Footer />
       </div>
     </div>
