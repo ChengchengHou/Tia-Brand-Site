@@ -15,6 +15,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TextPlugin } from "gsap/TextPlugin";
+import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import Partner from "../../components/Partner/Partner";
 import SplitType from "split-type";
@@ -101,56 +102,7 @@ export const Frame = () => {
 
   return (
     <div className="frame">
-      <div className="nav-bar">
-        <div className="logo-wrapper">
-          <Logo3 className="logo-3" />
-        </div>
-
-        <div className="div-28">
-          <div className="div-23">
-            <div className="text-wrapper-16">Service</div>
-
-            <SizeMediumColor
-              className="design-component-instance-node"
-              iconIcon={
-                <Icon12 className="expandmorefilled-1" color="#282725" />
-              }
-            />
-          </div>
-
-          <div className="div-23">
-            <div className="text-wrapper-16">Membership</div>
-
-            <SizeMediumColor
-              className="design-component-instance-node"
-              iconIcon={
-                <Icon12 className="expandmorefilled-1" color="#282725" />
-              }
-            />
-          </div>
-
-          <div className="text-wrapper-16">Locations</div>
-        </div>
-
-        <div className="div-23">
-          <Button
-            className="design-component-instance-node"
-            color="primary"
-            label="Log In"
-            size="large"
-            stateProp="enabled"
-            variant="text"
-          />
-          <Button
-            className="design-component-instance-node"
-            color="primary"
-            label="Join Tia"
-            size="large"
-            stateProp="enabled"
-            variant="contained"
-          />
-        </div>
-      </div>
+      <NavBar />
       <div className="div-2">
         <div className="section-wrapper">
           <div className="hero">
@@ -207,9 +159,9 @@ export const Frame = () => {
                 </p>
 
                 <p className="world-class-women-s animated-text">
-                  World-class women’s health experts <br />
-                  Meet a few of our trusted providers who specialize in women’s
-                  healthcare.
+                  World-class women’s health experts: <br />
+                  Meet a few of our trusted providers who <br />
+                  specialize in women’s healthcare.
                 </p>
               </div>
 
@@ -285,7 +237,7 @@ export const Frame = () => {
           </div>
         </div>
         <Partner />
-
+        <Insurance />
         <div className="div-wrapper">
           <div className="div-7">
             <div className="div-8">
@@ -416,7 +368,6 @@ export const Frame = () => {
             </div>
           </div>
         </div>
-        <Insurance />
         <Footer />
       </div>
     </div>

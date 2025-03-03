@@ -1,0 +1,35 @@
+.nav-bar {
+  align-items: center;
+  background-color: var(--palette-common-white-states-main);
+  border-radius: var(--paddings-border-radius);
+  box-shadow: 0.4rem 1.6rem 3.2rem rgba(29, 29, 29, 0.08);
+  display: flex;
+  height: 72px;
+  justify-content: space-between; /* Center align the navbar content */
+  padding: 0 var(--paddings-padding-24);
+
+  position: fixed;
+  top: 24px; /* Stick to the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 1000; /* Ensure it stays above other elements */
+  max-width: 1280px; /* Restrict max width */
+  width: 100%;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.div-28 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: var(--spacing-2);
+  position: relative;
+}
+
+.nav-items {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: var(--spacing-1);
+  position: relative;
+}

@@ -1,14 +1,28 @@
 .footer {
   align-items: flex-start;
   align-self: stretch;
-  background-color: var(--material-colors-green-50);
+  background-color: var(--material-colors-green-700);
   border: 0px none;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: var(--spacing-4);
-  margin-bottom: -0.41px;
   padding: 80px 129px;
+  position: relative;
+  width: 100%;
+  border-radius: 32px 32px 0px 0px;
+}
+
+.div-24 {
+  align-items: center;
+  align-self: stretch;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-color: var(--palette-text-primary);
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 0px 0px var(--spacing-3) 0px;
   position: relative;
   width: 100%;
 }
@@ -16,9 +30,9 @@
 .div-25 {
   align-items: flex-start;
   align-self: stretch;
-  border-bottom-style: solid;
+  border-bottom-style: dashed;
   border-bottom-width: 1px;
-  border-color: var(--palette-divider);
+  border-color: var(--palette-text-primary);
   display: flex;
   flex: 0 0 auto;
   gap: 32px;
@@ -65,12 +79,12 @@
 .utitliy-links {
   color: #000000;
   flex: 0 0 auto;
-  font-family: var(--typography-h5-font-family);
-  font-size: var(--typography-h5-font-size);
-  font-style: var(--typography-h5-font-style);
-  font-weight: var(--typography-h5-font-weight);
-  letter-spacing: var(--typography-h5-letter-spacing);
-  line-height: var(--typography-h5-line-height);
+  font-family: var(--typography-body1-font-family);
+  font-size: var(--typography-body1-font-size);
+  font-style: var(--typography-body1-font-style);
+  font-weight: var(--typography-body1-font-weight);
+  letter-spacing: var(--typography-body1-letter-spacing);
+  line-height: var(--typography-body-line-height);
   margin-top: -1px;
   position: relative;
   display: flex;
@@ -94,9 +108,9 @@
 .div-27 {
   align-items: center;
   align-self: stretch;
-  border-bottom-style: solid;
+  border-bottom-style: dashed;
   border-bottom-width: 1px;
-  border-color: var(--palette-divider);
+  border-color: var(--palette-text-primary);
   display: flex;
   flex: 0 0 auto;
   gap: 48px;
@@ -114,4 +128,17 @@ a {
 a:hover {
   text-decoration: none;
   color: var(--palette-primary-main);
+}
+
+.overline {
+  align-self: stretch;
+  color: var(--palette-text-secondary);
+  font-family: var(--typography-overline-font-family);
+  font-size: var(--typography-overline-font-size);
+  font-style: var(--typography-overline-font-style);
+  font-weight: var(--typography-overline-font-weight);
+  letter-spacing: var(--typography-overline-letter-spacing);
+  line-height: var(--typography-overline-line-height);
+  position: relative;
+  text-align: center;
 }

@@ -15,7 +15,7 @@ export const Partner = () => {
     // 🎯 **Slide + Scale + Border-Radius Change**
     gsap.fromTo(
       section,
-      { y: 60, scale: 0.8, filter: "blur(32px)", borderRadius: "32px" }, // Smaller with rounded corners
+      { y: 10, scale: 0.8, filter: "blur(32px)", borderRadius: "32px" }, // Smaller with rounded corners
       {
         scrollTrigger: {
           trigger: section,
