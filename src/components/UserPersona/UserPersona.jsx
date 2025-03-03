@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 import Anna from "/img/anna.jpg";
 import Cath from "/img/Cath.jpg";
@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const UserPersona = () => {
+  const underlineRef = useRef(null); // Declare ref properly
   useEffect(() => {
     //line effect
     // Ensure the SVG path is selected AFTER the component mounts
@@ -39,6 +40,22 @@ const UserPersona = () => {
             scrub: 4, // Ensures smooth animation on scroll
           },
         });
+
+        if (underlineRef.current) {
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".patient-journey", // Correct selector
+              start: "top center",
+              end: "bottom center",
+              scrub: true,
+            },
+          });
+
+          tl.to(underlineRef.current, { stroke: "#831A4A", duration: 1 })
+            .to(underlineRef.current, { stroke: "#D72638", duration: 1 })
+            .to(underlineRef.current, { stroke: "#FF914D", duration: 1 })
+            .to(underlineRef.current, { stroke: "#FFD166", duration: 1 });
+        }
       }
     }, 500); // Delay to ensure DOM elements have loaded properly
 
@@ -88,7 +105,8 @@ const UserPersona = () => {
       <div className="patient-journey">
         <div className="patient-journey-header">
           <h2 className="patient-journey-title">
-            Comprehensive care for complex symptoms
+            <span className="italic">Comprehensive care</span> for complex
+            symptoms
           </h2>
           <p id="changing-text" className="patient-description">
             Comprehensive, personalized care for chronic conditions like
@@ -135,7 +153,8 @@ const UserPersona = () => {
         </div>
         <div className="patient-journey-header">
           <h2 className="patient-journey-title">
-            Compassionate care for the fourth trimester
+            <span className="italic">Compassionate care</span> for the fourth
+            trimester
           </h2>
           <p id="changing-text" className="patient-description">
             Comprehensive postpartum care that extends beyond the six-week
@@ -178,7 +197,8 @@ const UserPersona = () => {
         </div>
         <div className="patient-journey-header">
           <h2 className="patient-journey-title">
-            Tailored care to guide you through menopause
+            <span className="italic">Tailored care</span> to guide you through
+            menopause
           </h2>
           <p id="changing-text" className="patient-description">
             Personalized, holistic care for women experiencing early signs of
@@ -227,7 +247,8 @@ const UserPersona = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              className="animated-path"
+              ref={underlineRef}
+              className="animated-path "
               d="M371.5 0.5C92.5 196.5 -96.8001 518.9 53.9999 618.5C242.5 743 1161 394 1133.5 856C1111.04 1233.32 54.7826 1142.08 84.5 1562C119 2049.5 1093.99 1702.79 1185 1891C1258.5 2043 814.5 2142.5 209 2142.5"
               stroke="#EF308D"
             />

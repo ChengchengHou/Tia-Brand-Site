@@ -53,6 +53,21 @@ body {
   margin-bottom: 32px;
 }
 
+.underline-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  width: 100%;
+  position: relative; /* Keep it in the document flow */
+  margin-top: 5px; /* Adjust based on spacing needs */
+}
+
+.animated-underline {
+  width: auto; /* Adjust based on text size */
+  height: auto;
+  display: block;
+}
+
 .frame .div-3 {
   align-items: center;
   border: 0px none;

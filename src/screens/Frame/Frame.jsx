@@ -50,6 +50,30 @@ const phrases = [
 export const Frame = () => {
   // GSAP User Ref
   const yourHealthRef = useRef(null);
+  const underlineRef = useRef(null);
+
+  //GSAP Line Animation
+  useEffect(() => {
+    if (underlineRef.current) {
+      const pathLength = underlineRef.current.getTotalLength();
+
+      console.log("Path Length:", pathLength); // Debugging step
+
+      gsap.set(underlineRef.current, {
+        strokeDasharray: pathLength,
+        strokeDashoffset: pathLength,
+      });
+
+      gsap.to(underlineRef.current, {
+        strokeDashoffset: 0, // Draw the line
+        duration: 3,
+        delay: 1,
+        repeat: -1,
+        ease: "power2.Out",
+        yoyo: true,
+      });
+    }
+  }, []);
 
   // GSAP Text Animation
   useGSAP(() => {
@@ -247,6 +271,24 @@ export const Frame = () => {
               <p className="text-wrapper-8 animated-text">
                 Why our members love Tia
               </p>
+              <div className="underline-container">
+                <svg
+                  className="animated-underline"
+                  width="28"
+                  height="45"
+                  viewBox="0 0 28 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.56377 43.3833C0.397101 29.7167 0.263767 2.18334 9.06377 1.38334C20.0638 0.383338 12.0637 28.3833 10.5637 23.8833C9.06377 19.3833 14.0637 -2.1166 23.0637 1.38334C32.0637 4.88327 19.5637 28.3833 11.5637 35.3833"
+                    stroke="#282725"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    ref={underlineRef}
+                  />
+                </svg>
+              </div>
             </div>
 
             <div className="div-9">

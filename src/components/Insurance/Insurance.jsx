@@ -12,6 +12,7 @@ import IntelCare from "/img/Intel-Care.svg";
 import Oscar from "/img/Oscar.svg";
 import UnitedHealthcare from "/img/United-Healthcare.svg";
 import BrightHeath from "/img/Bright-Health.svg";
+import { Button } from "../../components/Button";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -96,6 +97,14 @@ export const Insurance = () => {
             alt="BrightHealth"
           />
         </div>
+        <Button
+          className="design-component-instance-node"
+          color="primary"
+          label="See if’you’re in network"
+          size="large"
+          stateProp="enabled"
+          variant="contained"
+        />
       </div>
     </div>
   );
