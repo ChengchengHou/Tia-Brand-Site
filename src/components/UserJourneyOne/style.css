@@ -1,0 +1,173 @@
+.patient-journey-1 {
+  align-items: center;
+  background-color: var(--material-colors-terra-50);
+  border: 0px none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-7);
+  padding: 80px 128px;
+  position: relative;
+  width: 100vw;
+}
+
+.patient-journey-header {
+  align-items: flex-start;
+  border: 0px none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+}
+
+.patient-journey-title {
+  align-self: stretch;
+  color: #000000;
+  font-family: var(--typography-h3-font-family);
+  font-size: var(--typography-h3-font-size);
+  font-style: var(--typography-h3-font-style);
+  font-weight: var(--typography-h3-font-weight);
+  letter-spacing: var(--typography-h3-letter-spacing);
+  line-height: var(--typography-h3-line-height);
+  position: relative;
+  text-align: center;
+}
+
+.patient-description {
+  align-self: stretch;
+  color: var(--palette-text-secondary);
+  font-family: var(--typography-body2-font-family);
+  font-size: var(--typography-body2-font-size);
+  font-style: var(--typography-body2-font-style);
+  font-weight: var(--typography-body2-font-weight);
+  letter-spacing: var(--typography-body2-letter-spacing);
+  line-height: var(--typography-body2-line-height);
+  position: relative;
+  text-align: center;
+  max-width: 396px;
+  margin: auto;
+}
+
+.patient-journey-1 .patient-name {
+  color: var(--palette-text-primary);
+  font-family: var(--typography-h6-font-family);
+  font-size: var(--typography-h6-font-size);
+  font-style: var(--typography-h6-font-style);
+  font-weight: var(--typography-h6-font-weight);
+  letter-spacing: var(--typography-h6-letter-spacing);
+  line-height: var(--typography-h6-line-height);
+  margin-top: 8px; /* Fix overlap */
+  position: relative; /* Use absolute positioning */
+  text-align: center;
+  width: 100%; /* Center it properly */
+  top: -20px; /* Adjust placement */
+  left: 0;
+}
+
+.element-wrapper {
+  border: 1px dashed;
+  border-color: var(--material-colors-terra-700);
+  border-radius: 32px;
+  height: 343.15px;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+  overflow: hidden;
+  position: relative;
+  width: 398px;
+}
+
+.element {
+  height: 341px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 396px;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.patient-name {
+  color: var(--palette-text-primary);
+  font-family: var(--typography-h6-font-family);
+  font-size: var(--typography-h6-font-size);
+  font-style: var(--typography-h6-font-style);
+  font-weight: var(--typography-h6-font-weight);
+  letter-spacing: var(--typography-h6-letter-spacing);
+  line-height: var(--typography-h6-line-height);
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 396px;
+}
+
+.patient-cards {
+  align-items: flex-start;
+  background-color: #ffffff33;
+  border: 1px solid;
+  border-color: var(--material-colors-terra-200);
+  border-radius: var(--shape-borderradius);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--paddings-padding-16);
+  position: relative;
+  width: 239px;
+  position: absolute;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+/* Position each card individually */
+.mental-health-card {
+  top: 60%;
+  left: 20%;
+}
+
+.care-plan-card {
+  top: 60%;
+  right: 20%;
+}
+
+.physical-health-card {
+  top: 2%;
+  right: 16%;
+}
+
+.patient-cards-title {
+  align-self: stretch;
+  color: #000000;
+  font-family: var(--typography-h6-font-family);
+  font-size: var(--typography-h6-font-size);
+  font-style: var(--typography-h6-font-style);
+  font-weight: var(--typography-h6-font-weight);
+  letter-spacing: var(--typography-h6-letter-spacing);
+  line-height: var(--typography-h6-line-height);
+  margin-top: -1px;
+  position: relative;
+}
+
+.patient-cards-des {
+  align-self: stretch;
+  color: #000000;
+  font-family: var(--typography-body1-font-family);
+  font-size: var(--typography-body1-font-size);
+  font-style: var(--typography-body1-font-style);
+  font-weight: var(--typography-body1-font-weight);
+  letter-spacing: var(--typography-body1-letter-spacing);
+  line-height: var(--typography-body1-line-height);
+  position: relative;
+}

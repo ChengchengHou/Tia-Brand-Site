@@ -20,6 +20,7 @@ import Footer from "../../components/Footer/Footer";
 import Partner from "../../components/Partner/Partner";
 import SplitType from "split-type";
 import Insurance from "../../components/Insurance/Insurance";
+import UserJourneyOne from "../../components/UserJourneyOne/UserJourneyOne";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -238,6 +239,7 @@ export const Frame = () => {
         </div>
         <Partner />
         <Insurance />
+
         <div className="div-wrapper">
           <div className="div-7">
             <div className="div-8">
@@ -296,7 +298,7 @@ export const Frame = () => {
             </div>
           </div>
         </div>
-
+        <UserJourneyOne />
         <div className="section-3">
           <div className="div-9">
             <img className="image-14" alt="Image" src="/img/image-22-1.png" />

@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Logo2 } from "../../icons/Logo2";
 import "./style.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
   return (
