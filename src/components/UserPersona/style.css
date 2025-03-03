@@ -1,10 +1,10 @@
-.patient-journey-1 {
+.patient-journey {
   align-items: center;
   background-color: var(--material-colors-terra-50);
   border: 0px none;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-7);
+  gap: var(--spacing-2);
   padding: 80px 128px;
   position: relative;
   width: 100vw;
@@ -18,11 +18,12 @@
   gap: 16px;
   justify-content: center;
   position: relative;
+  z-index: 10;
 }
 
 .patient-journey-title {
   align-self: stretch;
-  color: #000000;
+  color: var(--palette-text-primary);
   font-family: var(--typography-h3-font-family);
   font-size: var(--typography-h3-font-size);
   font-style: var(--typography-h3-font-style);
@@ -31,24 +32,26 @@
   line-height: var(--typography-h3-line-height);
   position: relative;
   text-align: center;
+  max-width: 396px;
+  margin: auto;
 }
 
 .patient-description {
   align-self: stretch;
   color: var(--palette-text-secondary);
-  font-family: var(--typography-body2-font-family);
-  font-size: var(--typography-body2-font-size);
-  font-style: var(--typography-body2-font-style);
-  font-weight: var(--typography-body2-font-weight);
-  letter-spacing: var(--typography-body2-letter-spacing);
-  line-height: var(--typography-body2-line-height);
+  font-family: var(--typography-body1-font-family);
+  font-size: var(--typography-body1-font-size);
+  font-style: var(--typography-body1-font-style);
+  font-weight: var(--typography-body1-font-weight);
+  letter-spacing: var(--typography-body1-letter-spacing);
+  line-height: var(--typography-body1-line-height);
   position: relative;
   text-align: center;
-  max-width: 396px;
+  max-width: 500px;
   margin: auto;
 }
 
-.patient-journey-1 .patient-name {
+.patient-journey .patient-name {
   color: var(--palette-text-primary);
   font-family: var(--typography-h6-font-family);
   font-size: var(--typography-h6-font-size);
@@ -94,6 +97,8 @@
   width: 100%;
   margin-top: 20px;
   position: relative;
+  margin-bottom: 120px;
+  z-index: 10;
 }
 
 .patient-name {
@@ -126,30 +131,30 @@
   width: 239px;
   position: absolute;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(16px);
 }
 
 /* Position each card individually */
 .mental-health-card {
-  top: 60%;
+  top: 80%;
   left: 20%;
 }
 
 .care-plan-card {
-  top: 60%;
+  top: 80%;
   right: 20%;
 }
 
 .physical-health-card {
-  top: 2%;
+  top: 20%;
   right: 16%;
 }
 
 .patient-cards-title {
   align-self: stretch;
-  color: #000000;
+  color: var(--palette-text-primary);
   font-family: var(--typography-h6-font-family);
   font-size: var(--typography-h6-font-size);
   font-style: var(--typography-h6-font-style);
@@ -162,12 +167,24 @@
 
 .patient-cards-des {
   align-self: stretch;
-  color: #000000;
-  font-family: var(--typography-body1-font-family);
-  font-size: var(--typography-body1-font-size);
-  font-style: var(--typography-body1-font-style);
-  font-weight: var(--typography-body1-font-weight);
-  letter-spacing: var(--typography-body1-letter-spacing);
-  line-height: var(--typography-body1-line-height);
+  color: var(--palette-primary-main);
+  font-family: var(--typography-body2-font-family);
+  font-size: var(--typography-body2-font-size);
+  font-style: var(--typography-body2-font-style);
+  font-weight: var(--typography-body2-font-weight);
+  letter-spacing: var(--typography-body2-letter-spacing);
+  line-height: var(--typography-body2-line-height);
   position: relative;
+}
+
+.svg-container {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2149px;
 }

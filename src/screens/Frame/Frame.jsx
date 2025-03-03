@@ -20,7 +20,7 @@ import Footer from "../../components/Footer/Footer";
 import Partner from "../../components/Partner/Partner";
 import SplitType from "split-type";
 import Insurance from "../../components/Insurance/Insurance";
-import UserJourneyOne from "../../components/UserJourneyOne/UserJourneyOne";
+import UserPersona from "../../components/UserPersona/UserPersona";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -187,20 +187,19 @@ export const Frame = () => {
                       state="enabled"
                       variant="filled"
                     />
+                    <p className="text-wrapper-5">
+                      Dr. Moritz is a board-certified OB/GYN with 30+ years of
+                      practice in New York City. He was the Director of
+                      Gynecology at Mount Sinai West for 25 years and is a
+                      renowned advocate for patient choice in childbirth. A
+                      testament to Dr. Moritz’s commitment to patient-centered
+                      women’s care, he created the only two operating
+                      in-hospital birthing centers in Manhattan. He lectures on
+                      new technologies in gynecological procedures, authored
+                      chapters on uterine fibroids, and has been listed in New
+                      York Magazine’s “Top Doctors” for the past five years.
+                    </p>
                   </div>
-
-                  <p className="text-wrapper-5">
-                    Dr. Moritz is a board-certified OB/GYN with 30+ years of
-                    practice in New York City. He was the Director of Gynecology
-                    at Mount Sinai West for 25 years and is a renowned advocate
-                    for patient choice in childbirth. A testament to Dr.
-                    Moritz’s commitment to patient-centered women’s care, he
-                    created the only two operating in-hospital birthing centers
-                    in Manhattan. He lectures on new technologies in
-                    gynecological procedures, authored chapters on uterine
-                    fibroids, and has been listed in New York Magazine’s “Top
-                    Doctors” for the past five years.
-                  </p>
 
                   <Button
                     className="design-component-instance-node"
@@ -298,78 +297,7 @@ export const Frame = () => {
             </div>
           </div>
         </div>
-        <UserJourneyOne />
-        <div className="section-3">
-          <div className="div-9">
-            <img className="image-14" alt="Image" src="/img/image-22-1.png" />
-
-            <div className="div-20">
-              <p className="text-wrapper-6">
-                Comprehensive care for complex symptoms
-              </p>
-
-              <p className="text-wrapper-7">
-                Comprehensive mental, physical, and emotional care for chronic
-                health issues such as diabetes, obesity, mental health
-                conditions, autoimmune disorders, endometriosis, and PCOS, with
-                personalized solutions that truly work.
-                <br />
-                Essential screenings that matter, including Pap smears, breast
-                exams, pelvic assessments, cardio-metabolic tests, hormonal
-                evaluations, and immunoglobulin tests, to help you stay
-                proactive about your health.
-                <br />
-                Access to top specialists through leading institutions like UCSF
-                and Cedars-Sinai, ensuring you receive the expert guidance
-                needed to manage complex symptoms effectively.
-              </p>
-            </div>
-          </div>
-
-          <div className="div-9">
-            <div className="div-20">
-              <p className="text-wrapper-6">
-                Compassionate care for the fourth trimester
-              </p>
-
-              <p className="text-wrapper-7">
-                Postpartum care for you that goes beyond a typical
-                <br />
-                six-week checkup, supporting your physical and emotional
-                recovery.
-                <br />
-                We help you navigate the challenges of new motherhood with
-                long-term, compassionate care.
-                <br />
-                From hormone management to mental health, our care supports your
-                fourth trimester and beyond.
-              </p>
-            </div>
-
-            <img className="image-15" alt="Image" src="/img/image-23-1.png" />
-          </div>
-
-          <div className="div-9">
-            <img className="image-16" alt="Image" src="/img/image-24-1.png" />
-
-            <div className="div-20">
-              <p className="text-wrapper-6">
-                Tailored care to guide you through menopause
-              </p>
-
-              <p className="text-wrapper-7">
-                Personalized care for women navigating early signs of
-                perimenopause.
-                <br />
-                Expert guidance on symptom management with both hormonal and
-                non-hormonal options.
-                <br />
-                Holistic care plans tailored to your unique body and mind,
-                helping you thrive through perimenopause.
-              </p>
-            </div>
-          </div>
-        </div>
+        <UserPersona />
         <Footer />
       </div>
     </div>
