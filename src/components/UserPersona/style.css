@@ -172,13 +172,15 @@
 .patient-cards-des {
   align-self: stretch;
   color: var(--palette-primary-main);
-  font-family: var(--typography-body2-font-family);
-  font-size: var(--typography-body2-font-size);
-  font-style: var(--typography-body2-font-style);
-  font-weight: var(--typography-body2-font-weight);
-  letter-spacing: var(--typography-body2-letter-spacing);
-  line-height: var(--typography-body2-line-height);
+  font-family: "Basis Grotesque Pro-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 16px;
   position: relative;
+  list-style-type: disc;
+  padding-left: 16px;
 }
 
 .svg-container {

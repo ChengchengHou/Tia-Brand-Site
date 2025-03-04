@@ -340,6 +340,7 @@ export const Frame = () => {
           </div>
         </div>
         <UserPersona />
+
         <Footer />
       </div>
     </div>

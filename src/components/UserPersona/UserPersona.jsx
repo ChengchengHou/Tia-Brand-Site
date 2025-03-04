@@ -127,28 +127,31 @@ const UserPersona = () => {
           {/* Mental Health */}
           <div className="patient-cards mental-health-card">
             <div className="patient-cards-title">Mental Health</div>
-            <div className="patient-cards-des">Anxiety</div>
+            <ul className="patient-cards-des">
+              <li>Anxiety</li>
+            </ul>
           </div>
 
           {/* Care Plan */}
           <div className="patient-cards care-plan-card">
             <div className="patient-cards-title">Care Plan</div>
-            <p className="patient-cards-des">
-              Whole Health Exam (include Pap smear & cervical cancer check){" "}
-              <br />
-              Diabetes screen <br />
-              Acupuncture for anxiety <br />
-              Eliminate added sugars to reduce symptoms
-            </p>
+            <ul className="patient-cards-des">
+              <li>
+                Whole Health Exam (include Pap smear & cervical cancer check)
+              </li>
+              <li>Diabetes screen</li>
+              <li>Acupuncture for anxiety</li>
+              <li>Eliminate added sugars to reduce symptoms</li>
+            </ul>
           </div>
 
           {/* Physical Health */}
           <div className="patient-cards physical-health-card">
             <div className="patient-cards-title">Physical Health</div>
-            <p className="patient-cards-des">
-              Due for a Pap Smear & cervical cancer check <br />
-              Recent weight gain
-            </p>
+            <ul className="patient-cards-des">
+              <li>Due for a Pap Smear & cervical cancer check</li>
+              <li>Recent weight gain</li>
+            </ul>
           </div>
         </div>
         <div className="patient-journey-header">
@@ -172,27 +175,31 @@ const UserPersona = () => {
           {/* Mental Health */}
           <div className="patient-cards mental-health-card">
             <div className="patient-cards-title">Mental Health</div>
-            <div className="patient-cards-des">Postpartum depression</div>
+            <ul className="patient-cards-des">
+              <li>Postpartum depression</li>
+            </ul>
           </div>
 
           {/* Care Plan */}
           <div className="patient-cards care-plan-card">
             <div className="patient-cards-title">Care Plan</div>
-            <p className="patient-cards-des">
-              Wants to discuss contraception <br />
-              Incontinences
-            </p>
+            <ul className="patient-cards-des">
+              <li>Wants to discuss contraception</li>
+              <li>Incontinences</li>
+              <li>Non-hormonal IUD</li>
+              <li>Magnesium & B-vitamin complex</li>
+            </ul>
           </div>
 
           {/* Physical Health */}
           <div className="patient-cards physical-health-card">
             <div className="patient-cards-title">Physical Health</div>
-            <p className="patient-cards-des">
-              Pelvic floor therapy <br />
-              Postpartum Group <br />
-              Non-hormonal IUD <br />
-              Magnesium & B-vitamin complex
-            </p>
+            <ul className="patient-cards-des">
+              <li>Pelvic floor therapy</li>
+              <li>Postpartum Group</li>
+              <li>Non-hormonal IUD</li>
+              <li>Magnesium & B-vitamin complex</li>
+            </ul>
           </div>
         </div>
         <div className="patient-journey-header">
@@ -215,27 +222,30 @@ const UserPersona = () => {
           {/* Mental Health */}
           <div className="patient-cards mental-health-card">
             <div className="patient-cards-title">Mental Health</div>
-            <div className="patient-cards-des">Brain fog</div>
+            <ul className="patient-cards-des">
+              <li>Brain fog</li>
+            </ul>
           </div>
 
           {/* Care Plan */}
           <div className="patient-cards care-plan-card">
             <div className="patient-cards-title">Care Plan</div>
-            <p className="patient-cards-des">
-              vaginal dryness <br />
-              Due for a mammogram
-            </p>
+            <ul className="patient-cards-des">
+              <li>vaginal dryness</li>
+              <li>Due for a mammogram</li>
+            </ul>
           </div>
 
           {/* Physical Health */}
           <div className="patient-cards physical-health-card">
             <div className="patient-cards-title">Physical Health</div>
-            <p className="patient-cards-des">
-              Hormone Replacement <br />
-              Acupunture for perimenopause <br />
-              Referral for mammogram <br />
-              Microneedling
-            </p>
+            <ul className="patient-cards-des">
+              <li>Hormone Replacement</li>
+              <li>Acupunture for perimenopause</li>
+              <li>Referral for mammogram </li>
+              <li>Microneedling</li>
+              <li>Due for a mammogram</li>
+            </ul>
           </div>
         </div>
         <div className="svg-container">
