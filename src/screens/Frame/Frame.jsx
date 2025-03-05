@@ -21,6 +21,7 @@ import Partner from "../../components/Partner/Partner";
 import SplitType from "split-type";
 import Insurance from "../../components/Insurance/Insurance";
 import UserPersona from "../../components/UserPersona/UserPersona";
+import GradientBackground from "../../components/Gradient/Gradient";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -131,6 +132,7 @@ export const Frame = () => {
       <div className="div-2">
         <div className="section-wrapper">
           <div className="hero">
+            <GradientBackground />
             <div className="div-3">
               <div className="div-4">
                 <p ref={yourHealthRef} className="your-health">
@@ -267,27 +269,28 @@ export const Frame = () => {
           <div className="div-7">
             <div className="div-8">
               <div className="text-wrapper-3">TESTIMONIALS</div>
-
-              <p className="text-wrapper-8 animated-text">
-                Why our members love Tia
-              </p>
-              <div className="underline-container">
-                <svg
-                  className="animated-underline"
-                  width="28"
-                  height="45"
-                  viewBox="0 0 28 45"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.56377 43.3833C0.397101 29.7167 0.263767 2.18334 9.06377 1.38334C20.0638 0.383338 12.0637 28.3833 10.5637 23.8833C9.06377 19.3833 14.0637 -2.1166 23.0637 1.38334C32.0637 4.88327 19.5637 28.3833 11.5637 35.3833"
-                    stroke="#282725"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    ref={underlineRef}
-                  />
-                </svg>
+              <div class="testimonial-header">
+                <p className="text-wrapper-8 animated-text">
+                  Why our members love Tia
+                </p>
+                <div className="underline-container">
+                  <svg
+                    className="animated-underline"
+                    width="28"
+                    height="45"
+                    viewBox="0 0 28 45"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.56377 43.3833C0.397101 29.7167 0.263767 2.18334 9.06377 1.38334C20.0638 0.383338 12.0637 28.3833 10.5637 23.8833C9.06377 19.3833 14.0637 -2.1166 23.0637 1.38334C32.0637 4.88327 19.5637 28.3833 11.5637 35.3833"
+                      stroke="#282725"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      ref={underlineRef}
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
 
@@ -340,7 +343,6 @@ export const Frame = () => {
           </div>
         </div>
         <UserPersona />
-
         <Footer />
       </div>
     </div>

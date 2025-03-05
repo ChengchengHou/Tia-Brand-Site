@@ -53,15 +53,6 @@ body {
   margin-bottom: 32px;
 }
 
-.underline-container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;
-  width: 100%;
-  position: relative; /* Keep it in the document flow */
-  margin-top: 5px; /* Adjust based on spacing needs */
-}
-
 .animated-underline {
   width: auto; /* Adjust based on text size */
   height: auto;
@@ -809,4 +800,19 @@ body {
 .marquee-wrapper {
   background-color: var(--material-colors-terra-100);
   max-width: 100vw;
+}
+
+.testimonial-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Adjust the spacing between text and heart */
+}
+
+#gradient-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
