@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   overflow: hidden;
+  opacity: 0.8;
   z-index: -1;
   transform: rotate(-12deg) scale(2) translateY(-45%);
   -webkit-mask-image: linear-gradient(

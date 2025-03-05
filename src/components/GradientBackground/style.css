@@ -1,0 +1,40 @@
+.background--custom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: rotate(-45deg) scale(2) translateY(-56%);
+  /* -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+}
+
+/* Curved Mask Overlay */
+.background--custom::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background: radial-gradient(
+    circle at top left,
+    rgba(0, 0, 0, 0.2),
+    transparent
+  ); */
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}

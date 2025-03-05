@@ -21,7 +21,7 @@ import Partner from "../../components/Partner/Partner";
 import SplitType from "split-type";
 import Insurance from "../../components/Insurance/Insurance";
 import UserPersona from "../../components/UserPersona/UserPersona";
-import GradientBackground from "../../components/Gradient/Gradient";
+import GradientBackground from "../../components/GradientBackground/GradientBackground";
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -273,7 +273,7 @@ export const Frame = () => {
                 <p className="text-wrapper-8 animated-text">
                   Why our members love Tia
                 </p>
-                <div className="underline-container">
+                <div className="underline-container ">
                   <svg
                     className="animated-underline"
                     width="28"

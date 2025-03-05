@@ -1,8 +1,10 @@
+// *Wrong Gradient, ignore this for now
+
 import React, { useEffect, useRef } from "react";
 import Granim from "granim"; // ✅ Import Granim.js
 import "./style.css";
 
-const GradientBackground = () => {
+const Gradient = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -16,7 +18,7 @@ const GradientBackground = () => {
         states: {
           "default-state": {
             gradients: [
-              ["#D6DEBA", "#F5907A"],
+              ["#D6DEBA", "#FCF4E9"],
               ["#DCE1BA", "#8FA26D"],
               ["#D4A8A8", "#D4A8A8"],
             ],
@@ -38,4 +40,4 @@ const GradientBackground = () => {
   );
 };
 
-export default GradientBackground;
+export default Gradient;
